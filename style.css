@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    
+}
+
+/* 
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+
+
+.bg {
+    background-color: hsl(0, 0%, 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: hsl(0, 0%, 100%);
+    height: 500px;
+    width: 732px;
+    display: flex;
+}
+
+.container-result, 
+.container-summary {
+    height: 100%;
+    width: 50%;
+}
+
+.container-result {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 40px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.container-result h5 {
+    font-weight: 500;
+    font-size: 23px;
+    margin-top: 35px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
+
+.result-circle {
+    background: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 50px auto 0;
+    text-align: center; 
+}
+
+
+.result-circle h1 {
+    font-weight: 700;
+    font-size: 75px;
+    position: relative;
+    top: 20%;
+}
+
+.result-circle p {
+    opacity: 0.4;
+    position: relative;
+    top: 15%;
+}
+.result-circle div {
+    text-align: center;
+    margin: auto;
+}
+
+.result-desc h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+
+}
+
+.result-desc p {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 50px 0px 50px;
+}
+.container-summary {
+    border-radius: 40px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 15px hsl(221,100%,96%);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.first {
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+
+.first p {
+    color: hsl(224, 30%, 27%);
+    font-weight: 900;
+    font-size: 27px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lside {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+.rside {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.rside p {
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+
+.rside p span {
+    opacity: 0.5;
+}
+
+
+
+.reaction {
+    background-color: #fff6f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 80%;
+    height: 55px;
+    margin-top: 30px; 
+  }
+
+
+  .memory {
+    background-color: #fffbf2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 55px;
+    margin-top: 15px;
+
+
+  }
+  
+  .verbal {
+    background-color: #f2fafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 55px;
+    margin-top: 15px;
+
+  }
+  
+  .visual {
+    background-color: #f3f3fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 55px;
+    margin-top: 15px;
+
+  }
+
+.second img {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.reaction .lside p {
+    color: #fb969b;
+    font-weight: 500;
+  }
+  
+  .memory .lside p {
+    color: rgb(245, 192, 91);
+    font-weight: 500;
+  }
+  
+  .verbal .lside p {
+    color: rgb(128, 199, 181);
+    font-weight: 500;
+  }
+  
+  .visual .lside p {
+    color: rgb(170, 170, 221);
+    font-weight: 500;
+  }
+
+.btn { 
+    margin: auto 0;
+    text-align: center;
+}
+
+.btn button {
+    border: none;
+    border-radius: 30px;
+    width: 80%;
+    height: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+
+}
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+@media (max-width: 375px) {
+    .main {
+        flex-direction: column;
+        width: 100%; 
+        
+    }
+    .bg {
+        align-items: start;
+    }
+    .container-result {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    
+    .container-result,
+    .container-summary {
+        width: 100%;
+    }
+
+    .btn {
+        margin: 30px 0;
+    }
+
+    .result-desc{
+        margin-bottom: 30px;
+    }
+}
